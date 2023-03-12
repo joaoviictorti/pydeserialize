@@ -1,11 +1,20 @@
+#!/usr/bin/python3
+# -*- coding: UTF-8 -*-
 from setuptools import setup, find_packages
-import os
+import os,sys
 
 meta = {}
 here = os.path.abspath(os.path.dirname(__file__))
 
 with open(f"{here}/pydeserialize/__meta__.py") as arquivo:
     exec(arquivo.read(), meta)
+
+with open(f"{here}/requirements.txt", "r", encoding="utf-8") as f:
+    requires = f.read().splitlines()
+    if not requires:
+        print("Não foi possível ler os requisitos do arquivo requirements.txt"
+              "Isso indica que esta cópia do código-fonte está incompleta.")
+        sys.exit(2)
 
 with open("README.md", "r") as arq:
     readme = arq.read()
@@ -22,6 +31,7 @@ setup(name=meta["__title__"],
     description=meta["__description__"],
     packages=find_packages(),
     zip_safe=False,
+    install_requires=requires,
     python_requires=">=3.6, <4",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
