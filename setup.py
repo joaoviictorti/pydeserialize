@@ -16,7 +16,7 @@ with open(f"{here}/requirements.txt", "r", encoding="utf-8") as f:
               "Isso indica que esta cópia do código-fonte está incompleta.")
         sys.exit(2)
 
-with open("README.md", "r") as arq:
+with open("README.md", "r",encoding="utf-8") as arq:
     readme = arq.read()
 
 setup(name=meta["__title__"],
