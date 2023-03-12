@@ -3,19 +3,18 @@ from .run import ObjetoMalicioso
 from argparse import RawTextHelpFormatter
 
 def banner():
-    return """                                                                                                                                            
-                 ,--.                            ,--.        ,--.,--.               
- ,---.,--. ,--.,-|  | ,---.  ,---.  ,---. ,--.--.`--' ,--,--.|  |`--',-----. ,---.  
-| .-. |\  '  /' .-. || .-. :(  .-' | .-. :|  .--',--.' ,-.  ||  |,--.`-.  / | .-. : 
-| '-' ' \   ' \ `-' |\   --..-'  `)\   --.|  |   |  |\ '-'  ||  ||  | /  `-.\   --. 
-|  |-'.-'  /   `---'  `----'`----'  `----'`--'   `--' `--`--'`--'`--'`-----' `----' 
-`--'  `---'                                                                                                                              
+    return """                                                                                                                                                                                                                    
+           _                 _     _ _         
+ ___ _ _ _| |___ ___ ___ ___|_|___| |_|___ ___ 
+| . | | | . | -_|_ -| -_|  _| | .'| | |- _| -_|
+|  _|_  |___|___|___|___|_| |_|__,|_|_|___|___|
+|_| |___|                                                                                                                                                                            
      v0.0.1 - @joaoviictorti                                                   
 """
 
 def argumentos() -> None:
     
-    parse = argparse.ArgumentParser(prog=banner(),usage="pyserialize -ip 192.168.4.113 -p 80 -o Windows",formatter_class=RawTextHelpFormatter)
+    parse = argparse.ArgumentParser(prog=banner(),usage="pydeserialize -ip 192.168.4.113 -p 80 -o Windows",formatter_class=RawTextHelpFormatter)
     parse.add_argument("--version",action="version",version="pydeserialize 0.0.5")
     parse.add_argument("-ip",action="store",type=str,dest="ip",required=True, help="Insert ip")
     parse.add_argument("-p",action="store",type=str,dest="port",required=True, help="Insert port")
