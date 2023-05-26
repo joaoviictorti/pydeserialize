@@ -1,5 +1,5 @@
-__version__ = '0.0.7'
-__version_tuple__ = version_tuple = (0, 0, 7)
+__version__ = '0.0.8'
+__version_tuple__ = version_tuple = (0, 0, 8)
 __title__ = "pydeserialize"
 __description__ = "Insecure deserialization in python"
 __url__ = "https://github.com/joaoviictorti/pyserialize"

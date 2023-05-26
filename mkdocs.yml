@@ -1,0 +1,17 @@
+site_name: pydeserialize
+repo_url: https://github.com/joaoviictorti/pydeserialize
+repo_name: joaoviictorti/pydeserialize
+edit_uri: tree/main/docs
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/pydeserialize.png
+  favicon: assets/pydeserialize.png
+
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - css/center.css
