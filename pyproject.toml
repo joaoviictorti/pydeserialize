@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Desserialização insegura em python"
 authors = ["João <joaovictorti08@gmail.com>"]
 license = "MIT License"
-readme = "/docs/assets/README.md"
+readme = "/docs/README.md"
 homepage = "https://github.com/joaoviictorti/pyserialize"
 
 [tool.poetry.dependencies]
