@@ -1,8 +1,9 @@
-- 0.0.8: Adding CI in the project
-- 0.0.7: Reajusted banner pydeserialize
-- 0.0.6: Reset version
-- 0.0.5: To add requirements.txt
-- 0.0.4: Bug version
-- 0.0.3: Powershell script reset
-- 0.0.2: Reset features of README.md and some files
-- 0.0.1: Initial pydeserialize PyPI release.
+0.0.9: Adicionada dependência do Poetry.
+0.0.8: Adicionado CI (Integração Contínua) no projeto.
+0.0.7: Reajustado banner pydeserialize.
+0.0.6: Versão resetada.
+0.0.5: Adicionado requirements.txt.
+0.0.4: Versão com correção de bug.
+0.0.3: Script do Powershell resetado.
+0.0.2: Recursos do README.md e alguns arquivos resetados.
+0.0.1: Lançamento inicial do pydeserialize no PyPI.

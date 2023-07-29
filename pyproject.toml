@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pydeserialize"
+version = "0.0.9"
+description = "Desserialização insegura em python"
+authors = ["João <joaovictorti08@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://github.com/joaoviictorti/pyserialize"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+termcolor = "^2.3.0"
+
+[tool.poetry.scripts]
+pydeserialize = "pydeserialize.pydeserialize:argumentos"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
