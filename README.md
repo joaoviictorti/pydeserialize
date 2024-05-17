@@ -1,6 +1,4 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=header"/>
-
-![logo_do_projeto](/docs/assets/pydeserialize.png)
+![project_logo](/docs/assets/pydeserialize.png)
 
 <p align="center">
 	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/made%20with-python-red"></a>
@@ -8,49 +6,49 @@
 	<a href="https://github.com/joaoviictorti/pydeserialize/releases"><img src="https://img.shields.io/github/release/joaoviictorti/pydeserialize?color=blue"></a>
 </p>
 
-<h4 align="center">pydeserialize testar vulnerabilidades de desserialização insegura do python</h4>
+<h4 align="center">pydeserialize test for insecure python deserialization vulnerabilities</h4>
 
 
 <p align="center">
-  <a href="#características">Características</a> •
-  <a href="#instalação">Instalação</a> •
-  <a href="#forma-de-utilização"> Forma de utilização</a> •
-  <a href="#detalhes">Detalhes</a> •
-  <a href="#executando-pydeserialize">Executando pydeserialize</a>  
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#how-to-use"> How to use</a> •
+  <a href="#details">Details</a> •
+  <a href="#running-pydeserialize">Running pydeserialize</a>  
 </p>
 
 ---
 
 
-O pydeserialize é uma ferramenta que gera payloads de desserialização insegura em python. Possui uma funcionalidade que faz encode das payloads desejadas e dessa forma sendo simples e otimizada para velocidade. pydeserialize é construído para fazer apenas uma coisa - gera payloads de desserialização insegura + encodes e faz isso muito bem.
+pydeserialize is a tool that generates insecure deserialization payloads in Python. It has a feature that encodes the desired payloads, making it simple and optimized for speed.
 
-Projetei o `pydeserialize` para cumprir todas as responsabilidades para gera payloads e encodes, mantive um modelo consistentemente passivo para torná-lo útil para testadores de penetração.
+I designed `pydeserialize` to fulfill all the responsibilities for generating payloads and encodes, keeping a consistently passive model to make it useful for penetration testers.
 
-# Características
+# Features
 
- - Gera payloads para explora vulnerabilidades de desserialização insegura em python    
+ - Generates payloads to exploit insecure deserialization vulnerabilities in python  
 
-# Forma de utilização
+# How to use
 
 ```sh
 pydeserialize -ip 192.168.4.113 -p 80 -e shell -o Windows
 pydeserialize -ip 192.168.4.113 -e b64 -p 80 -o Linux
 ```
 
-# Detalhes
+# Details
 
-![logo_do_projeto](/docs/assets/help.png)
+![project_logo](/docs/assets/help.png)
 
-# Instalação
+# Installation
 
-pydeserialize requer **python3** e para baixá-lo só usar:
+pydeserialize requires **python3** and to download it just use:
 
 ```sh
 pip3 install pydeserialize
 ```
 
-# Executando pydeserialize
+# Running pydeserialize
 
-![logo_do_projeto](/docs/assets/exec.png)
+![project_logo](/docs/assets/exec.png)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>
